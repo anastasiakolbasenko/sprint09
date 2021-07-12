@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign up</title>
+        <link rel="stylesheet" href="public/style.css">
+    </head>
+    <body>
+        <div class="main-container">
+            <section class="auth-sidebar">
+                <div class="auth-sidebar-content">
+                        <div class="login-propos on-color">
+                        <h2>Do you have account already?</h2>
+                        <a href="/login"><button class="button log-in-nav">Log in</button></a>
+                    </div>
+                </div>
+            </section>
+            <section class="content">
+                <main>
+                    <div class="auth-content">
+                        <h2>Sign up</h2>
+                        <p class="message-error" id="message-error"></p>
+                        <div class="signup-form">
+                            <form action="/signup" class="signup" id="new_user" method="POST">
+                                <label>Create a login</label>
+                                <input class="text-input" type="text" placeholder="Create a unique login" name="login" required>
+                                <label>Your Full name</label>
+                                <input class="text-input" type="text" placeholder="First and last name" name="name" required>
+                                <label>Your Email Address</label>
+                                <input class="text-input" type="email" placeholder="Fill your email" name="email" required>
+                                <div class="form-field-group">
+                                    <div class="form-field">
+                                        <label>Create password</label>
+                                        <input class="text-input" type="password" placeholder="Create password" name="password" required>
+                                    </div>
+                                    <div class="form-field">
+                                        <label>Confirm password</label>
+                                        <input class="text-input" type="password" placeholder="password again..." name="confirm" required>
+                                    </div>
+                                </div> 
+                                <div class="form-btns">
+                                    <input class="button form-sub" type="submit" value="Create Account">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </main>
+            </section>
+        </div>
+    </body>
+</html>
